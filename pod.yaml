@@ -1,0 +1,13 @@
+# kubectl apply -f (./pod.yaml) que é o nome do documento
+#  kubectl get pods -watch
+# kubectl delete -f  ./pod.yaml ::apagar
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: primeiro-pod
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:latest
+
+
